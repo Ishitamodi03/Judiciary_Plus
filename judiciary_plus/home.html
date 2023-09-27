@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="login.css">
+   <!-- popup css file link  -->
+   <link rel="stylesheet" href="css/stylep.css">
+
+   <script src="https://kit.fontawesome.com/4f969ccef2.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script> 
+
+  <!-- Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/float_notice.css" rel="stylesheet" type="text/css" />
+
+
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- external javascripts -->
+  <script src="js/jquery-2.2.4.min.js"></script>
+  
+
+</head>
+<body>
+
+
+
+
+
+
+<!-- 
+    <div class="popup">
+        <img src="./images/Close-36.png" class="close" />
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque quae illum inventore laborum quas,
+            expedita quaerat officia voluptates distinctio blanditiis ad impedit voluptas ipsa quo esse tempore. Iste,
+            officia?</p>
+            <button type="button">click me</button>
+    </div> -->
+        
+    
+    <div class="modal fade in" id="alert-modal" style=" display:block; padding-right: 17px; padding-top: 150px;">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header-2">
+                  <h4 class="modal-title modal-title-red" style="text-align: center;">
+                      You can Login to Our page
+                      <a id="close-btn" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true">
+                      </i></a></h4>
+                      
+              </div>
+              
+              <div class="modal-body ">
+                  
+               <div>
+                    <ul class="nav1 nav-tabs1" style="list-style-type:none;"> 
+                      <li class="active" >
+                        <a data-toggle="tab" class="form_button" href="home.html">Login Here</a>
+                      </li> 
+                      <li class="active">
+                        <a data-toggle="tab" class="form_button1" href="home2.html">Sign Up Here</a>
+                      </li>
+
+                     </ul>
+                      
+                      
+                      <div class="tab-content1">
+                        <div id="1" class="tab-pane fade in active">
+                          
+                              <div class="form-title1" style="text-align: center;">
+                                LOGIN FORM
+                              </div>
+                              <div class="form-input1">
+                                <label for="username">Username</label>
+                                <input type="text" id="username1" placeholder="Enter Username/Email" style="border-radius: 20px;">
+                              </div>
+                              <div class="form-input1">
+                                <label for="password">Password</label>
+                                <input type="text" id="username1" placeholder="Enter Password" style="border-radius: 20px;">
+                              </div>
+
+                              <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+                              
+                              <a href="" style="float: right;">Forgot your password ?</a>
+
+                                      <div class="form-input1" style="align-items: center; padding-left: 325px;">
+                                        <button id="login-btn1" onclick="check()">Login</button>
+                                      </div>
+                                    </div>
+                                
+                            <script src="login.js"></script>
+
+                          
+                        </div>
+                     </div>
+                  </div>
+              </div>
+             
+          </div>
+      </div>
+  </div>
+  
+  <script src="maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/closebtn.js.js"></script>
+    
+    <script type="text/javascript">
+
+      
+      $(window).on('load', function () {
+          $('#alert-modal').modal('show');
+      });
+
+      $(window).on('click', function () {
+          $('#alert-modal').modal('hide');
+      });
+
+      $('#close-btn').on('click', function () {
+          $('#alert-modal').modal('hide');
+      });
+
+      $('#alert-modal').on('click', e => {
+        e.stopPropagation();
+      })
+
+
+    </script>
+
+       
+
+
+
+
+    
+
+   <div class="whatsapp_main">
+      <a href="https://wa.me/916265034458" target="_blank"><img src="images/whatsapp_logo_icon_170905.png" width="3%" class="whatsapp_img"></a>
+   </div>
+   
+
+
+<!-- header section starts  -->
+
+   <div class="upnavbar1">
+      <a href="https://wa.me/916265034458"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-fw fa-envelope"></i> abc@gmail.com </a>
+      <a href="#"><i class="fa fa-fw fa-phone-alt"></i>626504458 </a>
+   </div>
+
+
+
+
+
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> Judiciary Plus </a>
+   
+      <nav class="navbar">
+         <div id="close-navbar" class="fas fa-times"></div>
+         <a href="home.html">home</a>
+         <a href="about.html">about</a>
+         <a href="courses.html">courses</a>
+         <a href="blog.html">blog</a>
+         <a href="contact.html">contact</a>
+         <div class="dropdown">
+            <button class="dropbtn">Syllabus 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content1">
+               <a href="#">Link 1 <span>&#9656</span></a>                      
+               <a href="#">Link 2 <span>&#9656</span></a>
+            </div>
+        </div>
+      </nav>
+   
+      <div class="icons">
+         <div id="account-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+   
+   </header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home">
+
+   <div class="swiper home-slider">
+      
+      <div class="swiper-wrapper">
+
+         <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+            <div class="content">
+               <h3>the best courses you will find find here!</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?</p>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+            <div class="content">
+               <h3>the best courses you will find find here!</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?</p>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+            <div class="content">
+               <h3>the best courses you will find find here!</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?</p>
+               <a href="#" class="btn">get started</a>
+            </div>
+         </section>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="about">
+      
+   
+   <div class="image">
+      <img src="images/contact.png" alt="">
+   </div>
+  
+   <div class="contain">
+      <div class="head">
+         <h2>User Enquiry Form</h2>
+      </div>
+      <form>
+         <label> Your Name </label>
+         <input type="text" name="name" placeholder="Your Name">
+         <label> Email ID </label>
+         <input type="text" name="email" placeholder="Email Address">
+         <label> Contact Number </label>
+         <input type="text" name="contact" placeholder="Your Number">
+         <label> Message </label>
+         <textarea name="message" rows="3" cols="15" placeholder="Message">
+         </textarea>
+         <input type="submit" value="Send Enquiry" id="Submit">
+      </form>
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--enquery box ends-->
+
+
+
+
+<!-- subjects section starts  -->
+
+<section class="subjects">
+
+   <h1 class="heading">featured subjects</h1>
+
+   <div class="box-container">
+
+
+      <!-- <div class="swiper-slide slide">
+      <div class="box">
+         <img src="images/web-design.png" alt="">
+         <h3>graphic design</h3>
+         <p>12 modules</p>
+      </div>
+      </div>
+
+      <div class="swiper-slide slide">
+      <div class="box">
+         <img src="images/calculator.png" alt="">
+         <h3>mathemetics</h3>
+         <p>12 modules</p>
+      </div>
+      </div>
+
+      <div class="swiper-slide slide">
+      <div class="box">
+         <img src="images/teachings.png" alt="">
+         <h3>teaching</h3>
+         <p>12 modules</p>
+      </div>
+      </div>
+
+      <div class="swiper-slide slide">
+      <div class="box">
+         <img src="images/coding.png" alt="">
+         <h3>development</h3>
+         <p>12 modules</p>
+      </div>
+      </div>
+
+      <div class="swiper-slide slide">
+      <div class="box">
+         <img src="images/microscope.png" alt="">
+         <h3>science</h3>
+         <p>12 modules</p>
+      </div>
+      </div>  
+
+      <div class="swiper-slide slide">
+      <div class="box">
+         <img src="images/worker.png" alt="">
+         <h3>engineering</h3>
+         <p>12 modules</p>
+      </div>
+      </div> -->
+      
+      <!-- <div class="swiper-slide slide"> -->
+         <div class="box">
+            <img src="images/web-design.png" alt="">
+            <h3>graphic design</h3>
+            <p>12 modules</p>
+         </div>
+         <!-- </div> -->
+   
+         <!-- <div class="swiper-slide slide"> -->
+         <div class="box">
+            <img src="images/calculator.png" alt="">
+            <h3>mathemetics</h3>
+            <p>12 modules</p>
+         </div>
+         <!-- </div> -->
+   
+         <!-- <div class="swiper-slide slide"> -->
+         <div class="box">
+            <img src="images/teachings.png" alt="">
+            <h3>teaching</h3>
+            <p>12 modules</p>
+         </div>
+         <!-- </div> -->
+   
+         <!-- <div class="swiper-slide slide"> -->
+         <div class="box">
+            <img src="images/coding.png" alt="">
+            <h3>development</h3>
+            <p>12 modules</p>
+         </div>
+         <!-- </div> -->
+   
+         <!-- <div class="swiper-slide slide"> -->
+         <div class="box">
+            <img src="images/microscope.png" alt="">
+            <h3>science</h3>
+            <p>12 modules</p>
+         </div>
+         <!-- </div>    -->
+   
+         <!-- <div class="swiper-slide slide"> -->
+         <div class="box">
+            <img src="images/worker.png" alt="">
+            <h3>engineering</h3>
+            <p>12 modules</p>
+         </div>
+         <!-- </div>  -->
+
+   </div>
+
+
+</section>
+
+<!-- subjects section ends -->
+
+
+
+<!-- home courses slider section starts  -->
+
+<section class="home-courses">
+
+   <h1 class="heading">popular courses </h1>
+
+   <div class="swiper home-courses-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/aboutl.jpg" alt="">
+               <h3>clat exam</h3>
+            </div>
+            <div class="content">
+               <h3>clat exam</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/aboutl.jpg" alt="">
+               <h3>clat exam</h3>
+            </div>
+            <div class="content">
+               <h3>clat exam</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/aboutl.jpg" alt="">
+               <h3>clat exam</h3>
+            </div>
+            <div class="content">
+               <h3>clat exam</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/aboutl.jpg" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/aboutl.jpg" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/aboutl.jpg" alt="">
+               <h3>web development</h3>
+            </div>
+            <div class="content">
+               <h3>web development</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home courses slider section ends -->
+
+
+
+
+
+
+
+
+
+<!--Blog Section starts -->
+
+<section class="courses">
+
+   <h1 class="heading">important legal upadates </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="images/slide1.jpg" alt="">
+            <h3>judiciary</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+            <a href="#" class="btn">read more</a>
+            <!-- <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div> -->
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/slide2.jpg" alt="">
+            <h3>judiciary</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+            <a href="#" class="btn">read more</a>
+            <!-- <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div> -->
+         </div>
+      </div>
+      
+      <div class="box">
+         <div class="image">
+            <img src="images/slide1.jpg" alt="">
+            <h3>judiciary</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
+            <a href="#" class="btn">read more</a>
+            <!-- <div class="icons">
+               <span> <i class="fas fa-book"></i> 12 modules </span>
+               <span> <i class="fas fa-clock"></i> 6 hours </span>
+            </div> -->
+         </div>
+      </div>
+   </section>
+
+   <!--Blog Section ends -->
+
+
+   
+   
+   <!-- app section starts  -->
+   <h1 class="heading"> our app </h1>
+   <section class="about">
+      
+   
+      <div class="image">
+         <img src="images/download.jpg" alt="">
+      </div>
+   
+      <div class="content">
+         <h3 class="about-title">get free course material</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam hic magnam fugit exercitationem neque, quae laboriosam natus. Ut maxime assumenda facere ea quasi accusamus dolores delectus tempora animi, expedita iste.</p>
+      </div>
+   
+   </section>
+
+<!--App section end-->
+
+
+
+
+   <!-- students reviews section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading"> our students review </h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim animi atque numquam harum libero nemo, eligendi laboriosam beatae quo iure corrupti, neque rerum possimus non nisi quia! Cumque, tempora sit.</p>
+            <img src="images/me.JPG" alt="">
+            <h3>ashi</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim animi atque numquam harum libero nemo, eligendi laboriosam beatae quo iure corrupti, neque rerum possimus non nisi quia! Cumque, tempora sit.</p>
+            <img src="images/me.JPG" alt="">
+            <h3>ashi</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim animi atque numquam harum libero nemo, eligendi laboriosam beatae quo iure corrupti, neque rerum possimus non nisi quia! Cumque, tempora sit.</p>
+            <img src="images/me.JPG" alt="">
+            <h3>ashi</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim animi atque numquam harum libero nemo, eligendi laboriosam beatae quo iure corrupti, neque rerum possimus non nisi quia! Cumque, tempora sit.</p>
+            <img src="images/me.JPG" alt="">
+            <h3>ashi</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim animi atque numquam harum libero nemo, eligendi laboriosam beatae quo iure corrupti, neque rerum possimus non nisi quia! Cumque, tempora sit.</p>
+            <img src="images/me.JPG" alt="">
+            <h3>ashi</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim animi atque numquam harum libero nemo, eligendi laboriosam beatae quo iure corrupti, neque rerum possimus non nisi quia! Cumque, tempora sit.</p>
+            <img src="images/me.JPG" alt="">
+            <h3>ashi</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- students reviews section ends -->
+   
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fas fa-lightbulb"></i> Judiciary Plus </h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, voluptatem.</p>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html" class="link">Home</a>
+         <a href="about.html" class="link">About</a>
+         <a href="courses.html" class="link">Courses</a>
+         <a href="blog.html" class="link">Blog</a>
+         <a href="contact.html" class="link">Contact</a>
+      </div>
+
+      <div class="box">
+         <h3>useful links</h3>
+         <a href="#" class="link">Help Center</a>
+         <a href="contact.html" class="link">FAQs</a>
+         <a href="#" class="link">Send Feedback</a>
+         <a href="#" class="link">Privacy Policy</a>
+         <a href="#" class="link">Terms of use</a>
+      </div>
+
+      <!-- <div class="box">
+         <h3>newsletter</h3>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="btn">
+         </form>
+      </div> -->
+
+      <div class="scroll-bar">
+         <h2>Check our insta</h2>
+         The dilemma you face when preparing to enter the field of data analysis is not new. 
+         In job listings, employers often ask for the experience; but what should you do if you’re 
+         seeking your first position as a data analyst? In this case, your portfolio will come in 
+         handy. Include projects that demonstrate your skills and expertise. Even if you do not 
+         have previous experience, creating a portfolio with relevant projects will go a long way 
+         toward convincing employers that you are a good candidate.
+         <img src="images/iggimg.jpg">
+         <img src="images/igimg.jpg">
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>Ishita Modi</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
